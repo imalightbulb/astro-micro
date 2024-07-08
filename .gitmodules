@@ -1,0 +1,3 @@
+[submodule "public/fonts/iA-Fonts"]
+    path = public/fonts/iA-Fonts
+    url = https://github.com/iaolo/iA-Fonts
