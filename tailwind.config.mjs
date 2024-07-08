@@ -1,4 +1,5 @@
 import defaultTheme from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
@@ -6,10 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Geist Sans", ...defaultTheme.fontFamily.sans],
-        mono: ["Geist Mono", ...defaultTheme.fontFamily.mono],
+        serif: ["iAWriterQuattroS", "Noto Serif TC", ...defaultTheme.fontFamily.serif],
+        mono: ["iAWriterMonoS", "Noto Sans TC", ...defaultTheme.fontFamily.mono],
+        sans: ["iAWriterDuoS", "Noto Sans TC", ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [require("@tailwindcss/typography")],
 };
+

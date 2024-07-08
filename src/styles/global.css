@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Noto Serif TC';
+  src: url('/public/fonts/Noto_Serif_TC/static/NotoSerifTC-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('/public/fonts/Noto_Sans_TC/static/NotoSansTC-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iAWriterDuoS';
+  src: url('/public/fonts/iA-Fonts/iA Writer Duo/Webfonts/iAWriterDuoS-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'iAWriterMonoS';
+  src: url('/public/fonts/iA-Fonts/iA Writer Mono/Webfonts/iAWriterMonoS-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS';
+  src: url('/public/fonts/iA-Fonts/iA Writer Quattro/Webfonts/iAWriterQuattroS-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+
 html {
   overflow-y: auto;
   color-scheme: light;
@@ -20,15 +66,16 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-neutral-100 dark:bg-neutral-900;
+  @apply bg-[rgb(246,238,225)] dark:bg-[rgb(16,23,42)];
   @apply text-black/75 dark:text-white/75;
 }
 
 header {
   @apply fixed left-0 right-0 top-0 z-50 py-6;
-  @apply bg-neutral-100/75 dark:bg-neutral-900/75;
+  @apply bg-[rgb(246,238,225)]/75 dark:bg-[rgb(16,23,42)]/75;
   @apply saturate-200 backdrop-blur-sm;
 }
+
 
 main {
   @apply flex-1 py-32;
